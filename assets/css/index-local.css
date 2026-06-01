@@ -1,0 +1,370 @@
+/*==========================================================================
+       HANYA MENGUBAH WARNA (SAGE GREEN, IVORY, CHAMPAGNE GOLD)
+       ========================================================================== */
+    
+    :root {
+        --text-olive-dark: #1e3527;      /* Warna teks utama Hijau Zaitun Gelap */
+        --sage-green-main: #00674F ;      /* Hijau Utama Tombol "Isi Buku Tamu" */
+        --sage-green-glow: #56ab81;      /* Gradasi Hijau */
+        --gold-champagne-start: #00674F; /* Tombol Login Emas Soft */
+        --gold-champagne-end: #56ab81;   /* Gradasi Emas Soft */
+        --bg-mint-soft: #f0f6f2;         /* Latar belakang mint sangat soft */
+    }
+
+/* =========================================
+   PREMIUM CREAM GRADIENT BACKGROUND
+   Elegant Soft Luxury Style
+========================================= */
+
+body.index-page {
+    color: #4b4036 !important;
+    background-color: #f8f4ee !important;
+
+    background-image:
+        radial-gradient(circle at top left,
+            rgba(255, 244, 224, 0.85) 0%,
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(232, 213, 183, 0.45) 0%,
+            transparent 40%),
+
+        radial-gradient(circle at 85% 20%,
+            rgba(214, 188, 150, 0.18) 0%,
+            transparent 25%),
+
+        linear-gradient(
+            135deg,
+            #fffdf9 0%,
+            #f8f2ea 25%,
+            #f3ebe1 50%,
+            #f9f5ef 75%,
+            #fffdfa 100%
+        ) !important;
+
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+
+/* =========================================
+   SECTION TRANSPARENT
+========================================= */
+
+.hero,
+.service-section,
+.testimonials,
+.testimonials.light-background {
+    background: transparent !important;
+}
+
+    /* 3. WARNA TEKS & JUDUL */
+    h1, h2, h3, h4, h5, h6, .section-title h2 {
+        color: var(--text-olive-dark) !important;
+    }
+    h1 span {
+        color: var(--sage-green-main) !important;
+    }
+    .section-title h2::after {
+        background: var(--gold-champagne-start) !important;
+    }
+    .navmenu a {
+        color: var(--text-olive-dark) !important;
+    }
+    .navmenu a:hover, .navmenu .active {
+        color: var(--sage-green-main) !important;
+    }
+
+/* =========================================
+   PREMIUM FLOATING NAVBAR
+   More Contrast Elegant Style
+========================================= */
+
+.header-container {
+
+    /* WARNA CONTAINER NAVBAR */
+    background: linear-gradient(
+        135deg,
+        #fffaf3 0%,
+        #f7e7cf 45%,
+        #f2dcc0 100%
+    ) !important;
+
+    /* border soft gold */
+    border: 1.5px solid rgba(180, 140, 90, 0.28) !important;
+
+    /* efek floating */
+    box-shadow:
+        0 14px 40px rgba(96, 67, 28, 0.12),
+        0 3px 10px rgba(255,255,255,0.35) inset !important;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+    /* 5. WARNA TOMBOL LOGIN (KANAN ATAS) */
+    .header .btn-getstarted, .btn-getstarted.d-none {
+        background: linear-gradient(135deg, var(--gold-champagne-start), var(--gold-champagne-end)) !important;
+        color: #ffffff !important;
+        border: none !important;
+        box-shadow: 0 4px 15px rgba(208, 163, 76, 0.2) !important;
+    }
+    .header .btn-getstarted:hover {
+        opacity: 0.95;
+    }
+
+    /* 6. WARNA TOMBOL HERO "ISI BUKU TAMU" (TENGAH) */
+    .hero-buttons .btn-getstarted {
+        background: linear-gradient(135deg, var(--sage-green-main), var(--sage-green-glow)) !important;
+        color: #ffffff !important;
+        box-shadow: 0 8px 25px rgba(66, 147, 108, 0.25) !important;
+        border: none !important;
+    }
+    .hero-buttons .btn-getstarted:hover {
+        background: linear-gradient(135deg, var(--sage-green-glow), var(--sage-green-main)) !important;
+    }
+
+    /* 7. WARNA BADGE KECIL & AVATAR MORE */
+    .company-badge {
+        background-color: #e2eed8 !important; /* Hijau Pastel Muda */
+        color: #2b5c43 !important;
+        border-color: rgba(66, 147, 108, 0.15) !important;
+    }
+    .company-badge i {
+        color: var(--sage-green-main) !important;
+    }
+    .customer-avatars .avatar.more {
+        background: var(--gold-champagne-start) !important;
+    }
+
+    /* 8. WARNA JAM LAYANAN CARDS */
+    .service-card.purple {
+        background: linear-gradient(135deg, #42936c, #5cb88f) !important; /* Hijau Sage */
+        color: #ffffff !important;
+    }
+    .service-card.purple .badge {
+        background-color: #f7e7c4 !important;
+        color: #42936c !important;
+    }
+    .service-card.pink {
+        background: linear-gradient(135deg, var(--gold-champagne-start), var(--gold-champagne-end)) !important; /* Emas Champagne */
+        color: #ffffff !important;
+    }
+    .service-card.blue {
+        background: #ffffff !important;
+        color: var(--text-olive-dark) !important;
+        border-color: rgba(66, 147, 108, 0.15) !important;
+    }
+    .service-card.blue .icon-box {
+        background-color: var(--bg-mint-soft) !important;
+        color: var(--sage-green-main) !important;
+    }
+    .service-card.blue a {
+        color: var(--sage-green-main) !important;
+    }
+
+    /* 9. WARNA TESTIMONIAL / REVIEW */
+    .testimonial-item {
+        border-left-color: var(--sage-green-main) !important;
+        background-color: rgba(255, 255, 255, 0.8) !important;
+    }
+    .testimonial-item .stars i {
+        color: var(--gold-champagne-start) !important;
+    }
+
+    /* 10. WARNA FORM MODAL & TOMBOL SCROLL */
+    .soft-modal {
+        border-top-color: var(--sage-green-main) !important;
+    }
+    .soft-input:focus {
+        border-color: var(--sage-green-main) !important;
+        box-shadow: 0 0 0 0.25rem rgba(66, 147, 108, 0.15) !important;
+    }
+    .soft-btn {
+        background: linear-gradient(90deg, var(--sage-green-main), var(--sage-green-glow)) !important;
+        border: none !important;
+    }
+    #scroll-top {
+        background-color: var(--sage-green-main) !important;
+    }
+.soft-input { border-radius: 12px; border: 1px solid #eef2ff; padding: 12px; background: #f7f8ff; box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.05); }
+.soft-btn { border-radius: 12px; font-weight: 500; padding: 10px; background: linear-gradient(135deg, var(--soft-primary), var(--soft-secondary)); border: none; }
+.star3d { font-size: 32px; cursor: pointer; color: #ddd; transition: 0.2s; }
+.star3d:hover { transform: scale(1.2); }
+.star3d.active { color: #facc15; text-shadow: 0 4px 10px rgba(255, 200, 0, 0.6); }
+.tag3d{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 999px;
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 103, 79, 0.15) !important;
+    color: var(--text-olive-dark) !important;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    user-select: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) !important;
+}
+
+.tag3d:hover {
+    transform: translateY(-3px);
+    background-color: #f4faf6 !important;
+    border-color: var(--sage-green-glow) !important;
+    box-shadow: 0 5px 12px rgba(0, 103, 79, 0.08) !important;
+}
+.tag3d.active,
+.tag3d.active:hover,
+.tag3d.active:focus {
+    background: linear-gradient(135deg, var(--sage-green-main), var(--sage-green-glow)) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    /* Layered shadow untuk efek 3D yang halus dan tidak terpotong */
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 10px 20px rgba(0, 103, 79, 0.25) !important;
+    transform: translateY(-4px) scale(1.02);
+}
+.tag3d:focus,
+.tag3d:active{
+    outline:none !important;
+    box-shadow:none !important;
+}
+.hero-image img, .customers-badge, .testimonial-item { border-radius: 24px; box-shadow: var(--soft-shadow); }
+.customers-badge { background: rgba(255, 255, 255, 0.92); }
+.testimonials.section { background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.95)), radial-gradient(circle at top right, rgba(203, 12, 159, 0.1), transparent 24%); }
+.testimonials .testimonial-item { border: 1px solid rgba(94, 114, 228, 0.08); }
+.testimonials .stars i { color: #fbbf24; }
+@media (max-width: 991.98px) { .hero.section { padding-top: 140px; } .hero-buttons.d-flex { justify-content: center; } }
+.service-section 
+    .service-section { 
+    background-color: #ffffff !important;
+    background-image: 
+        radial-gradient(circle at 0% 40%, rgba(66, 147, 108, 0.09) 0%, rgba(255, 255, 255, 0) 50%),
+        radial-gradient(circle at 100% 20%, rgba(66, 147, 108, 0.09) 8%, rgba(255, 255, 255, 0) 60%),
+        linear-gradient(135deg, rgba(66, 147, 108, 0.02) 0%, rgba(226, 190, 122, 0.02) 100%) !important;
+    background-size: cover !important;
+    
+    /* Ukuran bawaan asli tetap dijaga, tidak diubah */
+    padding: 35px 25px; 
+    border-radius: 20px; 
+    margin-top: 30px; 
+}
+.service-container { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+.service-card { width: 300px; padding: 25px; border-radius: 20px; background: #ffffff; display: flex; align-items: center; gap: 15px; position: relative; overflow: hidden; box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.08), -8px -8px 20px rgba(255, 255, 255, 0.8); transition: all 0.3s ease; }
+.service-card:hover { transform: translateY(-8px) scale(1.02); }
+.icon-box { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), inset 0 -3px 6px rgba(0, 0, 0, 0.2); transition: 0.3s; }
+.icon-box i { font-size: 24px; }
+.service-card:hover .icon-box { transform: rotate(5deg) scale(1.1); }
+.content { text-align: left; }
+.content h3 { margin: 0; font-size: 18px; font-weight: 600; color: #2d3748; }
+.content p { margin: 5px 0; color: #4a5568; }
+.content a { color: #4facfe; text-decoration: none; font-weight: 500; }
+.badge { font-size: 12px; background: #8a84f1; padding: 5px 10px; border-radius: 10px; }
+.libur { color: #ff4d6d; font-weight: bold; }
+.bg-circle { position: absolute; bottom: -20px; right: -20px; width: 120px; height: 120px; border-radius: 50%; opacity: 0.15; }
+.purple .icon-box { background: linear-gradient(135deg, #6c63ff, #8b7bff); }
+.purple .bg-circle { background: #6c63ff; }
+.pink .icon-box { background: linear-gradient(135deg, #ff6584, #ff8fa3); }
+.pink .bg-circle { background: #ff6584; }
+.blue .icon-box { background: linear-gradient(135deg, #4facfe, #00c6ff); }
+.blue .bg-circle { background: #4facfe; }
+.info-box { margin-top: 30px; padding: 15px; background: #eaf1ff; border-radius: 15px; font-size: 14px; color: #3a5bbf; box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); }
+.testimonials .review-guest-name { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; line-height: 1.35; cursor: help; }
+.testimonials .testimonial-item { min-height: 170px; height: 100%; padding: 24px; }
+.testimonials .testimonial-item p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 48px; }
+.leaderboard-mobile { position: relative; display: block !important; width: 100%; max-width: 920px; margin: 0 auto; padding: 38px 28px 28px; border: 1px solid rgba(255, 255, 255, 0.82); border-radius: 28px; overflow: hidden; isolation: isolate; background: radial-gradient(circle at 9% 14%, rgba(190, 154, 255, 0.22) 0 18px, transparent 19px), radial-gradient(circle at 88% 16%, rgba(255, 117, 203, 0.2) 0 15px, transparent 16px), radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.8), transparent 20%), linear-gradient(135deg, rgba(249, 246, 255, 0.96), rgba(255, 236, 248, 0.94)); box-shadow: 0 16px 40px rgba(76, 45, 140, 0.16); }
+.mobile-podium-row { display: flex; justify-content: center; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+.mobile-winner { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+.mobile-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; background: #d9eefa; border: 4px solid #fff; box-shadow: 0 8px 20px rgba(54, 67, 116, 0.16); }
+.mobile-winner.first .mobile-avatar { width: 100px; height: 100px; border-width: 5px; }
+.mobile-winner::before { width: 30px; height: 30px; display: grid; place-items: center; margin-bottom: -12px; border: 3px solid #fff; border-radius: 50%; z-index: 2; color: #fff; font-weight: 800; font-size: 15px; box-shadow: 0 4px 12px rgba(68, 54, 94, 0.18); }
+.mobile-winner.first::before { content: "1"; background: linear-gradient(135deg, #ffca28, #f6a400); }
+.mobile-winner.second::before { content: "2"; background: linear-gradient(135deg, #c77dff, #8f4be8); }
+.mobile-winner.third::before { content: "3"; background: linear-gradient(135deg, #ffb45f, #ff8d35); }
+.mobile-name, .mobile-visits { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 110px; margin-top: 10px; padding: 6px 10px; background: rgba(255, 255, 255, 0.94); color: #070c3f; font-size: 11px; font-weight: 700; }
+.mobile-visits { width: 100px; margin-top: 6px; padding: 5px 8px; color: #9a00ce; font-size: 10px; border: 1px solid rgba(255, 255, 255, 0.82); }
+.mobile-podium { position: relative; width: 100%; margin-top: 10px; border-radius: 10px 10px 0 0; background: linear-gradient(180deg, #ffe987, #ffc322); box-shadow: inset 0 8px 16px rgba(255, 255, 255, 0.28); }
+.mobile-podium.gold { height: 130px; }
+.mobile-podium.silver { height: 95px; }
+.mobile-podium.bronze { height: 75px; }
+.select2-container--default .select2-selection--single { border-radius: 12px; height: 48px; border: 1px solid #eef2ff; background: #f7f8ff; padding: 8px; }
+.select2-container--default .select2-selection--single .select2-selection__arrow { height: 46px; }
+@media (max-width: 576px) { .mobile-avatar { width: 52px !important; height: 52px !important; } .mobile-winner.first .mobile-avatar { width: 66px !important; height: 66px !important; } .mobile-podium.gold { height: 78px !important; } .mobile-podium.silver { height: 58px !important; } .mobile-podium.bronze { height: 48px !important; } }
+
+@media (max-width: 767px){
+
+    html,
+    body{
+        overflow-x: hidden;
+    }
+
+    .leaderboard-mobile{
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 12px;
+        overflow: hidden;
+    }
+
+    .mobile-podium-row{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .mobile-winner{
+        flex: 1;
+        min-width: 0;
+        max-width: 33%;
+        align-items: center;
+    }
+
+    .mobile-avatar{
+        width: 55px !important;
+        height: 55px !important;
+        object-fit: cover;
+    }
+
+    .mobile-winner.first .mobile-avatar{
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .mobile-name{
+        width: 100%;
+        max-width: 90px;
+        font-size: 10px;
+        padding: 4px;
+        text-align: center;
+    }
+
+    .mobile-visits{
+        width: 100%;
+        max-width: 80px;
+        font-size: 9px;
+        padding: 3px;
+        text-align: center;
+    }
+
+    .mobile-podium{
+        width: 100%;
+    }
+
+    .mobile-podium.gold{
+        height: 70px !important;
+    }
+
+    .mobile-podium.silver{
+        height: 55px !important;
+    }
+
+    .mobile-podium.bronze{
+        height: 45px !important;
+    }
+
+}

@@ -1,0 +1,275 @@
+/* ========================================================
+   THEME PREMIUM GREEN & GOLD (ELEGANT)
+   ======================================================== */
+
+:root {
+    --primary-main: #2D6A4F;
+    --primary-light: #52B788;
+    --primary-dark: #1B4332;
+    --secondary-main: #E9C46A;
+    --secondary-dark: #F4A261;
+    --secondary-deep: #D4A373;
+    --accent-teal: #2A9D8F; /* Info/Progress */
+    --accent-danger: #E76F51; /* Reject/Danger */
+    --soft-primary: rgba(45, 106, 79, 0.1);
+    --soft-secondary: rgba(233, 196, 106, 0.15);
+
+    /* Bootstrap Variable Overrides */
+    --bs-primary: var(--primary-main);
+    --bs-secondary: var(--secondary-main);
+    --bs-success: var(--primary-light);
+    --bs-warning: var(--secondary-main);
+    --bs-danger: var(--accent-danger);
+    --bs-info: var(--accent-teal);
+    --bs-dark: var(--primary-dark);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-main), var(--primary-light));
+    --gradient-secondary: linear-gradient(135deg, var(--secondary-main), var(--secondary-dark));
+}
+
+/* ========================================================
+   PREMIUM MARBLE BACKGROUND DESIGNS
+   ======================================================== */
+body.index-page, 
+.search-page-body {
+    background: 
+        radial-gradient(circle at 0% 0%, rgba(45, 106, 79, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, rgba(233, 196, 106, 0.07) 0%, transparent 50%),
+        linear-gradient(125deg, #fdfbfb 0%, #f5f7f6 100%) !important;
+    background-attachment: fixed !important;
+}
+
+a { color: var(--primary-main); transition: 0.3s; }
+a:hover { color: var(--primary-dark); }
+
+/* ========================================================
+   SOFT UI DASHBOARD (ADMIN) OVERRIDES
+   ======================================================== */
+
+/* Backgrounds & Gradients */
+.bg-primary {
+    background-color: var(--primary-main) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary-main) !important;
+}
+.bg-gradient-primary {
+    background-image: var(--gradient-primary) !important;
+}
+.bg-gradient-secondary {
+    background-image: var(--gradient-secondary) !important;
+}
+.bg-gradient-dark {
+    background-image: linear-gradient(310deg, var(--primary-dark) 0%, var(--primary-main) 100%) !important;
+}
+
+/* Buttons */
+.btn-primary,
+.btn.bg-gradient-primary {
+    background-image: var(--gradient-primary) !important;
+    background-color: var(--primary-main) !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(45, 106, 79, 0.2) !important;
+}
+.btn-secondary,
+.btn.bg-gradient-secondary {
+    background-image: var(--gradient-secondary) !important;
+    background-color: var(--secondary-main) !important;
+    color: #2D3748 !important;
+    border: none;
+}
+
+/* Typography */
+.text-primary {
+    color: var(--primary-main) !important;
+}
+.text-secondary {
+    color: var(--secondary-deep) !important;
+}
+
+/* Sidebar & Navigation */
+#sidenav-main .nav-link.active {
+    background-color: var(--soft-primary) !important;
+    color: var(--primary-main) !important;
+    box-shadow: none;
+}
+#sidenav-main .nav-link.active i {
+    color: white !important;
+    background-image: var(--gradient-primary) !important;
+}
+.navbar-vertical .navbar-nav .nav-link.active .icon {
+    background-image: var(--gradient-primary) !important;
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background-image: var(--gradient-primary) !important;
+    border-color: transparent !important;
+}
+.page-link {
+    color: var(--primary-main);
+}
+
+/* Badges & Alerts */
+.badge.bg-primary {
+    background-color: var(--primary-main) !important;
+}
+.badge.bg-secondary {
+    background-color: var(--secondary-main) !important;
+    color: #2D3748 !important;
+}
+.alert-primary {
+    background-image: var(--gradient-primary) !important;
+    color: white;
+    border: none;
+}
+.alert-secondary {
+    background-image: var(--gradient-secondary) !important;
+    color: #2D3748 !important;
+    border: none;
+}
+.alert-info {
+    background: linear-gradient(135deg, var(--accent-teal), #48b4a9) !important;
+    color: white !important;
+    border: none;
+}
+
+
+/* Forms */
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-light) !important;
+    box-shadow: 0 0 0 2px var(--soft-primary) !important;
+}
+.form-check-input:checked {
+    background-image: var(--gradient-primary) !important;
+    border-color: var(--primary-main);
+}
+
+/* Tables & Cards */
+.table thead th {
+    color: var(--primary-dark) !important;
+    background-color: #f8f9ff;
+}
+.card {
+    box-shadow: 0 20px 27px 0 rgba(45, 106, 79, 0.1) !important;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: var(--soft-primary);
+    color: var(--primary-main);
+}
+.progress-bar {
+    background-image: var(--gradient-primary) !important;
+}
+
+/* ========================================================
+   iLANDING TEMPLATE (PUBLIC INDEX) OVERRIDES
+   ======================================================== */
+
+.btn-getstarted, .hero .btn-getstarted {
+    background: var(--gradient-primary) !important;
+    box-shadow: 0 10px 20px rgba(45, 106, 79, 0.2) !important;
+    border: none !important;
+}
+.accent-text {
+    background: linear-gradient(135deg, var(--primary-main), var(--secondary-main)) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.company-badge {
+    background: var(--soft-primary) !important;
+    color: var(--primary-main) !important;
+}
+#header .navmenu a:hover, 
+#header .navmenu a.active, 
+#header .navmenu .active i {
+    color: var(--primary-main) !important;
+}
+
+/* Service Cards (Restore original structure with Premium colors) */
+.service-card.purple .icon-box { background: var(--gradient-primary) !important; color: white !important; }
+.service-card.pink .icon-box { background: var(--gradient-secondary) !important; color: white !important; }
+.service-card.blue .icon-box { background: linear-gradient(135deg, var(--accent-teal), #48b4a9) !important; color: white !important; }
+
+.service-card .content h3 { color: var(--primary-dark) !important; }
+
+/* Testimonials & Stars */
+.testimonials .stars i, .star.active, .star3d.active {
+    color: var(--secondary-main) !important;
+}
+
+/* Other Components */
+.tag-btn.active { background: var(--gradient-primary) !important; }
+.soft-btn { background: var(--gradient-primary) !important; border: none; }
+.soft-input:focus {
+    border-color: var(--primary-light) !important;
+    box-shadow: 0 0 0 2px var(--soft-primary) !important;
+}
+
+/* Header Navigation */
+#header .navmenu a.active, #header .navmenu a:hover {
+    color: var(--primary-main) !important;
+}
+
+/* Podium / Leaderboard */
+.mobile-winner.first::before { background: var(--gradient-secondary) !important; }
+.mobile-winner.second::before, .mobile-winner.third::before { 
+    background: linear-gradient(135deg, #1B4332, #2D6A4F) !important; 
+}
+.rank1 img {
+    box-shadow: 0 0 25px var(--secondary-main), 0 10px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Modal Index */
+.soft-modal {
+    box-shadow: 0 15px 40px rgba(45, 106, 79, 0.25) !important;
+}
+
+/* ========================================================
+   ADMIN TABLES & CUSTOM ACTIONS
+   ======================================================== */
+
+.guest-action.approve {
+    background: linear-gradient(135deg, #2D6A4F, #52B788) !important; /* Hijau */
+}
+.guest-action.reject {
+    background: linear-gradient(135deg, #d63031, #ff7675) !important; /* Merah */
+}
+.guest-action.progress, .guest-action.finish {
+    background: linear-gradient(135deg, #0984e3, #74b9ff) !important; /* Biru */
+}
+.guest-action.undo {
+    background: linear-gradient(135deg, #f39c12, #f1c40f) !important; /* Oren */
+}
+
+/* Status Badges Overrides */
+.status-badge.bg-danger, .status-badge.bg-gradient-danger {
+    background: #d63031 !important;
+    color: #fff !important;
+}
+.status-badge.bg-success, .status-badge.bg-gradient-success {
+    background: #2D6A4F !important;
+    color: #fff !important;
+}
+.status-badge.bg-warning, .status-badge.bg-gradient-warning {
+    background: #f39c12 !important;
+    color: #fff !important;
+}
+.status-badge.bg-info, .status-badge.bg-gradient-info, .status-progres, .status-selesai {
+    background: #0984e3 !important;
+    color: #fff !important;
+}
+
+.dataTables_wrapper .page-item.active .page-link {
+    background-image: var(--gradient-primary) !important;
+}
+
+/* Tracking & Recent Specifics */
+.back-to-home {
+    color: var(--primary-main) !important;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+.search-button {
+    background: var(--gradient-primary) !important;
+}
